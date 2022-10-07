@@ -1,0 +1,35 @@
+[project]
+name = "camera_simulator"
+version = "0.0.1"
+authors = [
+  { name="Luis Manuel Barrios", email="luis@bv.studio" },
+]
+description = "Camera package"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: GNU General Public License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    'importlib-metadata; python_version<"3.8"',
+    "pytest",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/lmbgithub/pyhton-project1"
+"Bug Tracker" = "https://github.com/lmbgithub/pyhton-project1/issues"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+# All the following settings are optional:
+where = ["src"]  # ["."] by default
+include = ["*"]  # ["*"] by default
+exclude = ["tests*"]  # empty by default
+namespaces = false  # true by default
+

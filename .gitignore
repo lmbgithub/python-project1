@@ -1,0 +1,4 @@
+package/.cache
+package/.local
+package/.pytest_cache
+package/__pycache__

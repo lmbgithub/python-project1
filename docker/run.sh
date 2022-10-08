@@ -39,5 +39,6 @@ else
   fi
 
   clear;
+  echo "Running tests ..."
   docker exec $CONTAINER /bin/sh -c "python -m pytest";
 fi

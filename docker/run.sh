@@ -34,8 +34,8 @@ else
 
   # check if container exists
   if ! [ $( docker ps -a | grep $CONTAINER | wc -l ) -gt 0 ]; then
-    docker run --name $CONTAINER -d -v "$PACKAGE_DIR":/home/papp $CONTAINER;
-    docker exec $CONTAINER /bin/sh -c "pip install ."
+    docker run --name $CONTAINER -d -v "$PACKAGE_DIR":/home/papp $CONTAINER && \
+    docker exec $CONTAINER /bin/sh -c "pip install .";
   fi
 
   clear;

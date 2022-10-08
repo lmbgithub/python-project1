@@ -4,14 +4,17 @@ This is a simple example of creating and consuming a distributable Python packag
 
 # Contents
 
-- `camera_simulator` contains a project directory for a Python package. Note that its only content is the `camera_simulator/camera_simulator` directory for now. If you wanted to add tests or something you could put those in `camera_simulator/tests` or something.
-- `camera_simulator/camera_simulator` is the actual "package". In accordance with Python's [documented behavior](https://docs.python.org/3.9/tutorial/modules.html#tut-packages), the directory is a package because it contains an `__init__.py` file.
+- `package` contains a project directory for a Python package. Note that its only content is the `package/camera_simulator` directory for now. If you wanted to add tests or something you could put those in `package/tests` or something.
+- `package/camera_simulator` is the actual "package". In accordance with Python's [documented behavior](https://docs.python.org/3.9/tutorial/modules.html#tut-packages), the directory is a package because it contains an `__init__.py` file.
 
 ## Docker
+
 install and run all tests
+
 `./docker/run.sh`
 
 Turn off docker container 
+
 `./docker/run.sh down`
 
 
